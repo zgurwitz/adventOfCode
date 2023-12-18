@@ -1,4 +1,4 @@
-import Data.Char
+import Data.Char ( isDigit )
 
 myread :: String -> Int
 myread s = 10 * first s + last s '0' where
@@ -10,4 +10,4 @@ myread s = 10 * first s + last s '0' where
                   | otherwise = last xs n  
 
 
-main = interact $ show . sum . map myread . words
+main = interact $ show . sum . map myread . words 
